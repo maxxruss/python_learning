@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  python:
+    container_name: python
+    image: jupyter/scipy-notebook
+    ports:
+      - 80:8888
+    volumes:
+      - ./data:/usr/src/app
